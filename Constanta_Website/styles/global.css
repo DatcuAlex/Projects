@@ -1,0 +1,327 @@
+/* Resetare stiluri implicite pentru un comportament consistent pe toate browserele */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+/* Stiluri pentru header */
+header {
+  background-color: #34495e;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+header .logo img {
+  width: 50px;
+  height: auto;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+header .nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+header .nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header .nav-menu a:hover,
+header .nav-menu .active {
+  color: #3498db;
+}
+
+header .hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Meniu de navigație pentru mobile (hamburger) */
+@media screen and (max-width: 768px) {
+  header .nav-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #34495e;
+  }
+
+  header .hamburger {
+      display: block;
+      color: white;
+  }
+
+  header .nav-menu a {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+  }
+
+  header .nav-menu.active {
+      display: flex;
+  }
+}
+
+/* Stiluri pentru footer */
+footer {
+  background-color: #34495e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #3498db;
+}
+
+footer a:hover {
+  color: #2980b9;
+}
+
+/* Stiluri pentru butoane */
+button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Stiluri pentru imagini */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Stiluri pentru pagină principală (main) */
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stiluri generale pentru titluri */
+h1, h2, h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+/* Stiluri pentru linkuri */
+a {
+  text-decoration: none;
+  color: #2980b9;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #3498db;
+}
+
+/* Stiluri pentru liste */
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Stiluri pentru carduri de persoane notabile */
+.person-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.person-card img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.person-card h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.person-card p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.person-card .read-more {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.person-card .read-more:hover {
+  color: #2980b9;
+}
+
+/* Stiluri pentru galeria de imagini */
+.gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery .gallery-item {
+  width: 100%;
+  max-width: 250px;
+  background-color: #ecf0f1;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery .gallery-item img {
+  width: 100%;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.gallery .gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Stiluri pentru iframe (video) */
+iframe {
+  width: 100%;
+  max-width: 640px;
+  height: 360px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Adăugăm stiluri pentru tabelul de pe pagina Notable People */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #34495e;
+  color: white;
+  font-size: 18px;
+}
+
+td {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Stiluri pentru formatele de text și paragraf */
+p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Stiluri pentru responsive design */
+@media screen and (max-width: 768px) {
+  main {
+      padding: 15px;
+  }
+
+  .person-card {
+      padding: 15px;
+  }
+
+  .gallery {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .gallery .gallery-item {
+      width: 100%;
+  }
+  
+  /* Meniu hamburger pentru navigare pe mobil */
+  header .nav-menu {
+      display: none;
+  }
+
+  header .hamburger {
+      display: block;
+      color: white;
+  }
+
+  header .nav-menu.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #34495e;
+  }
+
+  header .nav-menu a {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+  }
+}

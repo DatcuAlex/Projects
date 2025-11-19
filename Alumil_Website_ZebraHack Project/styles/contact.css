@@ -1,0 +1,122 @@
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffeb3b;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.close-btn {
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.close-btn:hover {
+    color: #ff0000;
+}
+.buton-status {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buton-status:hover {
+    background-color: #ffeb3b; 
+    transform: scale(1.05); 
+}
+
+.reclamatii {
+    margin: 20px 0;
+}
+
+.reclamatie {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.reclamatie p {
+    margin: 5px 0;
+}
+
+.buton-status {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+}
+
+.buton-status:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+}
+
+.contact-section {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.contact-section h2 {
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #ffeb3b;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ffeb3b;
+}
+#Mesaj_success {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    display: none;
+}
+
+

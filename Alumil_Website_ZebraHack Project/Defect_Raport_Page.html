@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<link rel="stylesheet" href="styles/Defect_Raport_Page.css">
+<link rel="stylesheet" href="styles/header.css">
+<script src="script/Defect_Raport_Page.js"></script>
+<script src="script/header.js"></script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Raportare Defecte</title>
+</head>
+
+<body style="background-color: #e9e6e6;" >
+    <header>
+        <div class="logo">
+            <img src="Images/logo_header.png" alt="Logo" />
+        </div>
+        <h1>Report Defects</h1>
+        <button class="hamburger" aria-label="Toggle Navigation">☰</button>
+        <div id="google_translate_element"></div>
+    <nav class="navigation">
+      <div class="link"><a href="./index.html">Home</a></div>
+      <div class="link"><a href="./defect_raport_page.html"  class="active">Report</a></div>
+      <div class="link"><a href="./dashboard.html" >Dashboard</a></div>
+      <div class="link"><a href="./contact.html">Contact</a></div>
+      <div class="link"><a href="#" onclick="changeLanguage('en')"><img src="Images/anglia.jpg" alt="English" width=20px height=15px /></a></div>
+      <div class="link"><a href="#" onclick="changeLanguage('ro')"><img src="Images/romania.jpg" alt="romania"  width=20px height=15px /></a></div>
+    </nav>
+    </header>
+
+    <section>
+        <form id="defectForm" action="#" method="get" class="form-raportare">
+            <div class="form-raportare">
+                <label for="Problema">Describe your problem: </label>
+                <input type="text" name="name" id="name" required />
+            </div>
+            <div class="form-raportare">
+                <label for="Lista_Problema">What is your problem?</label>
+                <select id="Lista_Problema" name="problema_uzitata" class="form-raportare" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="Broken windows">Broken windows</option>
+                    <option value="Defective entrance doors">Defective entrance doors</option>
+                    <option value="Defective window shutters">Defective window shutters</option>
+                    <option value="Defective roof skylight">Defective roof skylight</option>
+                    <option value="Insufficient building materials delivered">Insufficient building materials delivered</option>
+                    <option value="The glass railing system was broken during transp.">The glass railing system was broken during transp.</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-raportare">
+                <label for="Adauga_Poze">Adauga Poze:</label>
+                <input type="file" id="Adauga_Poze" name="poze" accept="image/*" multiple onchange="handleFiles(event)">
+            </div>
+            <div class="form-raportare">
+                <input class="buton_submit" type="submit" value="Trimite!" />
+            </div>
+        </form>
+        <div id="Mesaj_success" class="mesaj_confirmare">
+            Raport sent successfully
+        </div>
+    </section>
+  </body>
+    <footer style="margin-bottom: 10px;">
+      <div class="footer-content">
+          <p>&copy; 2024 Alumil. All rights reserved.</p>
+          <p>Follow us:</p>
+          <div class="social-links">
+              <a href="https://facebook.com" target="_blank">Facebook</a>
+              <a href="https://twitter.com" target="_blank">Twitter</a>
+              <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          </div>
+      </div>
+  </footer>
+    
+
+</html>

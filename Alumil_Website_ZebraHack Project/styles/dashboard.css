@@ -1,0 +1,139 @@
+body{
+   background: #e9e6e6; 
+}
+.text{
+    font-size: 16px;
+    font-style: normal;
+}
+.dropppdown {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e9e6e6;
+    border-radius: 8px;
+    
+}
+.select-label {
+    display: block; 
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.custom-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #333;
+    border: 2px solid #ffdb27;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+.custom-select:hover, .custom-select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+.custom-select:focus {
+    background-color: #f9f9f9;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  select {
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+  
+  #complaints-list {
+    margin-top: 20px;
+  }
+  
+  .plangere {
+    background-color: #e9e6e6;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  .status{
+    background-color: #e9e6e6;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+  .info-box {
+    background-color: #e9e6e6;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: none; 
+  }
+  #info-text {
+    font-size: 16px;
+    
+    color: #333;
+  }
+  .info-box2 {
+    background-color: #e9e6e6;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: none; 
+  }
+  #info-text2 {
+    font-size: 16px;
+    color: #333;
+  }
+  .complaint {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .complaint h3 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.2em;
+  }
+  
+  .complaint p {
+    margin-bottom: 5px;
+    margin-left: 10px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .complaint b {
+    font-weight: bold;
+  }
+.event {
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .event.visible {
+    opacity: 1;
+    transform: translateY(0); 
+  }

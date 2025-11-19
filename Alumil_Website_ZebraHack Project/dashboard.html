@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<link rel="stylesheet" href="styles/dashboard.css">
+<link rel="stylesheet" href="styles/header.css">
+<link rel="icon" href="./Images/Iconita_Browser.png" type="image/x-icon">
+<html>
+    <header>
+    <title>Dashboard</title>
+    
+    <script src = "./script/header.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <div class="logo">
+      <img src="./Images/logo_header.png" alt="Logo" />
+    </div>
+    <h1>Dashboard</h1>
+    <button class="hamburger" aria-label="Toggle Navigation">☰</button>
+    <div id="google_translate_element"></div>
+    <nav class="navigation">
+      <div class="link"><a href="./index.html">Home</a></div>
+      <div class="link"><a href="./defect_raport_page.html">Report</a></div>
+      <div class="link"><a href="./dashboard.html"class="active" >Dashboard</a></div>
+      <div class="link"><a href="./contact.html"  >Contact</a></div>
+      <div class="link"><a href="#" onclick="changeLanguage('en')"><img src="Images/anglia.jpg" alt="English" width=20px height=15px /></a></div>
+      <div class="link"><a href="#" onclick="changeLanguage('ro')"><img src="Images/romania.jpg" alt="romania"  width=20px height=15px /></a></div>
+    </nav>
+    </header>
+
+    <body>
+        <h1 class="text">Our team is considered one of the best and most effective because of its remarkable ability to resolve customer complaints with exceptional efficiency.</h1>
+        <h2 class="text">To date, we have successfully addressed and resolved over 6,432 complaints, a figure that continues to grow as we maintain our commitment to providing outstanding service. This track record reflects not only our team's dedication to solving issues but also our proactive approach in ensuring customer satisfaction. We continuously strive to improve our processes, adapt to new challenges, and deliver timely and effective solutions, reinforcing our reputation as a reliable and results-driven team.</h2>
+        <br>
+        <img src="Images/dashbord1.jpg" class="center">
+        <br>
+        <h3 class="text event">Average time to solve the problem</h3>
+        <h4 class="text">An average resolution time of 25 minutes serves as a key indicator of the efficiency and performance of a support or assistance system. This timeframe reflects the team's ability to quickly identify the issue, find the appropriate solution, and implement it effectively. A short resolution time is often associated with a well-trained team, streamlined processes, and a high level of customer satisfaction. Additionally, monitoring the average resolution time allows for continuous improvement of workflows, helping to identify potential bottlenecks or weak points. This metric is crucial not only to ensure a positive user experience but also to optimize internal resources and reduce operational costs. In this context, an average resolution time of 25 minutes can be seen as a performance goal and a starting point for developing strategies to further improve team response times.</h4>
+        <div class="dropppdown">
+            <label for="plangere-type" class="text">Choose the complaint</label>
+            <select id="plangere-type" onchange="showInfo()" class="custom-select"> 
+              <option value="all" selected>All</option>
+              <option value="broken-windows">Broken windows</option>
+              <option value="defective-entrance-doors">Defective entrance doors</option>
+              <option value="defective-window-shutters">Defective window shutters</option>
+              <option value="defective-roof-skylight">Defective roof skylight</option>
+              <option value="insufficient-materials">Insufficient building materials delivered</option>
+              <option value="broken-glass-railings">The glass railing system was broken during transportation</option>
+            </select>
+        </div>
+          <div id="info-box" class="info-box">
+            <p id="info-text"></p>
+          </div>
+        <br>
+        <div class="dropppdown">
+            <label for="status-type" class="text">Status</label>
+            <select id="status-type" onchange="statusInfo()" class="custom-select"> 
+                <option value="active">Active</option>
+                <option value="solved">Solved</option>
+            </select>
+        </div>
+        <br>
+        <div id="info-box2" class="info-box2">
+            <p id="info-text2"></p>
+        </div>
+        <script src="script/dashboard.js"></script>
+        
+        <footer>
+          <div class="footer-content">
+              <p>&copy; 2024 Alumil. All rights reserved.</p>
+              <p>Follow us:</p>
+              <div class="social-links">
+                  <a href="https://facebook.com" target="_blank">Facebook</a>
+                  <a href="https://twitter.com" target="_blank">Twitter</a>
+                  <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+              </div>
+          </div>
+      </footer>
+    </body>
+</html>

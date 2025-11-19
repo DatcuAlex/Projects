@@ -1,0 +1,93 @@
+section 
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+}
+
+.title 
+{
+    font-size: 15px;
+    color: black;
+}
+
+form.form-raportare 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+}
+
+div.form-raportare 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+label,
+input,
+select 
+{
+    margin: 5px;
+}
+
+label 
+{
+    padding-right: 10px;
+    min-width: 150px;
+}
+
+.buton_submit 
+{
+    color: black;
+    background: yellow;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 200px;
+    align-self: center;
+}
+
+.mesaj_confirmare 
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    display: none;
+}
+
+.mesaj_confirmare.show 
+{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mesaj_confirmare.hide 
+{
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+}

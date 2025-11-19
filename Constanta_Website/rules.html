@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/rulesstyle.css">
+    <title>Reguli - Descoperă Constanța</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.jpeg" alt="Site Logo">
+            <h1>Explore Constanța</h1>
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link">Acasă</a>
+            <a href="history.html" class="nav-link">Istoria Constanței</a>
+            <a href="notable-people.html" class="nav-link">Oameni Importanți</a>
+            <a href="rules.html" class="active">Reguli și Informații</a>
+        </nav>
+        <div class="hamburger">&#9776;</div>
+    </header>
+
+    <main>
+        <h1>Reguli și Informații pentru Vizitatori</h1>
+        <h2>Reguli Generale</h2>
+
+        <div class="rules-list">
+            <ul>
+                <li>Respectați mediul înconjurător.
+                    <details>
+                        <summary>Mai multe informații</summary>
+                        <p>Aruncați deșeurile în locurile special amenajate și evitați poluarea apei.</p>
+                    </details>
+                </li>
+                <li>Respectați cultura locală.
+                    <details>
+                        <summary>Mai multe informații</summary>
+                        <p>Îmbrăcați-vă modest în locuri de cult și respectați tradițiile locale.</p>
+                    </details>
+                </li>
+                <li>Folosiți mijloacele de transport în comun.
+                    <details>
+                        <summary>Mai multe informații</summary>
+                        <p>Constanța are un sistem de transport public bine dezvoltat, care include autobuze și tramvaie.</p>
+                    </details>
+                </li>
+                <li>Respectați plajele.
+                    <details>
+                        <summary>Mai multe informații</summary>
+                        <p>Nu faceți focuri pe plajă și evitați activitățile care ar putea deranja alți vizitatori.</p>
+                    </details>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="gallery">
+            <!-- Input radio pentru a controla slide-urile -->
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+    
+            <!-- Slides -->
+            <div class="slides">
+                <div class="slide">
+                    <img src="assets/image1.png" alt="Imagine 1">
+                </div>
+                <div class="slide">
+                    <img src="assets/image2.jpeg" alt="Imagine 2">
+                </div>
+                <div class="slide">
+                    <img src="assets/image3.jpg" alt="Imagine 3">
+                </div>
+            </div>
+    
+            <!-- Controale pentru a schimba slide-urile -->
+            <div class="controls">
+                <label for="slide1" class="control-btn"></label>
+                <label for="slide2" class="control-btn"></label>
+                <label for="slide3" class="control-btn"></label>
+            </div>
+        </div>
+
+        <section class="video-section">
+            <h2>Informații suplimentare</h2>
+            <p>Vizitați video-ul de mai jos pentru a afla mai multe despre atracțiile și regulile din Constanța:</p>
+            <div class="video-container">
+                <video width="640" height="360" controls>
+                    <source src="assets/vid_1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p>Dacă video-ul nu se încarcă, vizionați-l <a href="https://www.youtube.com/watch?v=ughVC6tNBbk" target="_blank">aici</a>.</p>
+        </section>
+        
+    </main>
+</body>
+</html>

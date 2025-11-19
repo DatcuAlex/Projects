@@ -1,0 +1,100 @@
+
+<link rel="stylesheet" href="styles/contact.css">
+<link rel="stylesheet" href="styles/header.css">
+
+<script src = "script/contact.js"></script>
+<script src = "script/header.js"></script>
+<link rel="icon" href="./Images/Iconita_Browser.png" type="image/x-icon">
+<body>
+    <header>
+        <div class="logo">
+          <img src="Images/logo_header.png" alt="Logo" />
+        </div>
+        
+        <button class="hamburger" aria-label="Toggle Navigation">☰</button>
+        <div id="google_translate_element"></div>
+    <nav class="navigation">
+      <div class="link"><a href="./index.html">Home</a></div>
+      <div class="link"><a href="./defect_raport_page.html">Report</a></div>
+      <div class="link"><a href="./dashboard.html" >Dashboard</a></div>
+      <div class="link"><a href="./contact.html"  class="active">Contact</a></div>
+      <div class="link"><a href="#" onclick="changeLanguage('en')"><img src="Images/anglia.jpg" alt="English" width=20px height=15px /></a></div>
+      <div class="link"><a href="#" onclick="changeLanguage('ro')"><img src="Images/romania.jpg" alt="romania"  width=20px height=15px /></a></div>
+    </nav>
+        
+      </header>
+    <h1>Contact Us</h1>
+    <div class="reclamatii">
+        <div class="reclamatie">
+            <p><strong>Complaint #1:</strong> Defective product delivered</p>
+            <p class="status">Status: <span>In progress</span></p>
+            <button class="buton-status" onclick="changeStatus(this)">Mark as Resolved</button>
+        </div>
+
+        <div class="reclamatie">
+            <p><strong>Complaint #2:</strong> Damaged product on delivery</p>
+            <p class="status">Status: <span>In progress</span></p>
+            <button class="buton-status" onclick="changeStatus(this)">Mark as Resolved</button>
+        </div>
+
+        <div class="reclamatie">
+            <p><strong>Complaint #3:</strong> Incorrect product delivered</p>
+            <p class="status">Status: <span>In progress</span></p>
+            <button class="buton-status" onclick="changeStatus(this)">Mark as Resolved</button>
+        </div>
+
+        <div class="reclamatie">
+            <p><strong>Complaint #4:</strong> Wrong product ordered</p>
+            <p class="status">Status: <span>In progress</span></p>
+            <button class="buton-status" onclick="changeStatus(this)">Mark as Resolved</button>
+        </div>
+
+        <div class="reclamatie">
+            <p><strong>Complaint #5:</strong> Missing product in package</p>
+            <p class="status">Status: <span>In progress</span></p>
+            <button class="buton-status" onclick="changeStatus(this)">Mark as Resolved</button>
+        </div>
+    </div>
+
+    <div id="notification" class="notification" style="display: none;">
+        Your complaint has been resolved!
+        <span class="close-btn" onclick="closeNotification(notification)">&#10006;</span>
+    </div>
+
+    <div class="contact-section">
+        <h2>Contact Information</h2>
+        <p><strong>Phone:</strong> +40756273823</p>
+        <p><strong>Email:</strong>  alumil.contact@gmail.com </p>
+    </div>
+
+    <form id="contact-form" method="post" class="contact-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+
+        <button type="submit" id="submit" name="submit">Send</button>
+    </form>
+    
+    <div id="Mesaj_success" class="notification" style="display: none;">
+        Thank you for your message! We will get back to you soon.
+        <span class="close-btn" onclick="closeNotification(Mesaj_success)">&#10006;</span>
+    </div>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Alumil. All rights reserved.</p>
+            <p>Follow us:</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+      </footer>
+
+</body>

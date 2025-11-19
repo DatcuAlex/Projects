@@ -1,0 +1,102 @@
+/* Stiluri generale */
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background-color: #eef4f8; /* Fundal deschis inspirat de nisip */
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+h2, h3 {
+    color: #003f5c; /* Albastru marin */
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+/* Stil pentru tabel */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    max-width: 900px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 2px solid #ddd;
+    font-size: 24px;
+}
+
+th {
+    background-color: #ff7f50; /* Corai, pentru a adăuga o notă vibrantă */
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9; /* Contrast ușor pentru celule */
+}
+
+tr:hover {
+    background-color: #dfeef5; /* Albastru pal pentru hover */
+}
+
+p a {
+    color: #003f5c; /* Albastru marin */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Media query pentru dispozitive mobile */
+@media screen and (max-width: 768px) {
+    table {
+        width: 95%;
+    }
+
+    th, td {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}

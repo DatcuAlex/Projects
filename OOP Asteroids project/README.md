@@ -1,0 +1,8 @@
+
+This project simulates space missions where rockets are assigned to mine asteroids and sell extracted resources on a market. The program reads data from input files, processes missions based on efficiency, and outputs multiple result reports. Object-oriented programming principles are used throughout the implementation (constructors, destructors, getters, setters, encapsulation, etc.).
+
+For the asteroids, rockets, and market, I created a separate class for each, each containing a constructor, destructor, getters, and setters. Every class has both a .h header file and a .cpp implementation file.
+I also created missions. For that, I implemented a Missions class that includes a constructor, destructor, getters, and setters as well.
+Data reading was implemented using the find() function. I searched for the ";" character, then read from position 0 up to the ";" delimiter, and removed what had already been processed from the current line.
+In the createMissions function, I generated the missions and selected the most efficient rocket for each one. However, I was not able to make a rocket mine two different resources simultaneously (when separated by "&"). The function calculates the extracted quantity, the fuel consumption, total fuel cost, and both gross and net profit.
+There are also additional functions that write results to output files and compute different statistics (efficiency score, sorting rockets by net profit in descending order, etc.).

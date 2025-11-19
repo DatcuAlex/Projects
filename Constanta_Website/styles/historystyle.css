@@ -1,0 +1,240 @@
+/* Stiluri generale */
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background-color: #eef4f8; /* Fundal deschis inspirat de nisip */
+    color: #333;
+}
+
+/* Secțiunea Timeline */
+/* Stiluri pentru cronologia vizuală */
+.timeline {
+    margin: 50px 0;
+    position: relative;
+    padding: 20px;
+    list-style: none;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-date {
+    width: 100px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2C3E50;
+    background-color: #3498DB;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-content {
+    background-color: #ECF0F1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    width: 2px;
+    height: 100%;
+    background-color: #3498DB;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline-item::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .timeline-content {
+        width: 90%;
+    }
+}
+
+
+/* Media query pentru mobil */
+@media screen and (max-width: 768px) {
+    .timeline-container {
+        width: 90%;
+        padding-left: 0;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline-item:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    .timeline-icon {
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .timeline-content {
+        width: 100%;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 25px;
+    color: #333;
+    margin: 20px 0;
+}
+
+h1, h2 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+strong {
+    color: #ff7f50; /* Corai */
+}
+
+em {
+    color: #333;
+}
+
+/* Secțiunea Future Aspirations */
+.future-aspirations {
+    background-color: #e6eff5; /* Fundal deschis, pentru contrast */
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.future-aspirations h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #003f5c;
+    margin-bottom: 20px;
+}
+
+.future-aspirations h3 {
+    font-size: 24px;
+    color: #003f5c;
+    margin-top: 30px;
+}
+
+.future-aspirations p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Focus Areas */
+.focus-areas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.focus-item {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.focus-item h4 {
+    font-size: 20px;
+    color: #ff7f50; /* Corai */
+    margin-bottom: 15px;
+}
+
+.focus-item ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.focus-item ul li {
+    margin-bottom: 10px;
+}
+
+/* Imagini */
+.images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.image-item {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.image-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Media query pentru mobil */
+@media screen and (max-width: 768px) {
+    .focus-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
